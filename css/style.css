@@ -1,0 +1,151 @@
+/*
+AI assistance: ChatGPT
+Prompt: "what's next"
+Context: Step-by-step help styling the Assignment 1 home page
+to match the supplied reference screenshot.
+*/
+
+/* General page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #191d29;
+    background-color: white;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+    background-color: #191d29;
+}
+
+.header-content {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.site-logo {
+    color: white;
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+
+.logo-mark {
+    color: #d6a612;
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.nav-links a {
+    display: block;
+    padding: 0.6rem 0.8rem;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.nav-links a.active {
+    background-color: #34485b;
+    border-radius: 3px;
+}
+
+.site-header a:hover {
+    color: #d6a612;
+}
+
+/* Hero banner */
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: #282e40;
+    color: white;
+    padding: 5rem 2rem;
+}
+
+/* Decorative braces from the reference image */
+.hero::before {
+    content: "{ }";
+    position: absolute;
+    top: -2rem;
+    right: 1rem;
+    font-family: "Courier New", monospace;
+    font-size: 18rem;
+    color: rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    max-width: 340px;
+    margin: 0 0 1rem;
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+.hero p {
+    max-width: 500px;
+    margin: 0 0 2rem;
+    color: #b8c0d5;
+    line-height: 1.6;
+}
+
+/* Shared button styling */
+.button {
+    display: inline-block;
+    padding: 0.85rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-primary {
+    background-color: #d6a612;
+    color: #191d29;
+}
+
+.button-primary:hover {
+    background-color: #e7b929;
+}
