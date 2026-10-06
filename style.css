@@ -1,0 +1,245 @@
+/* General page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #191d29;
+    background-color: white;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+    background-color: #191d29;
+}
+
+.header-content {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.site-logo {
+    color: white;
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+
+.logo-mark {
+    color: #d6a612;
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.nav-links a {
+    display: block;
+    padding: 0.6rem 0.8rem;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.nav-links a.active {
+    background-color: #34485b;
+    border-radius: 3px;
+}
+
+.site-header a:hover {
+    color: #d6a612;
+}
+
+/* Hero banner */
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: #282e40;
+    color: white;
+    padding: 5rem 2rem;
+}
+
+/* Decorative braces from the reference image */
+.hero-decoration {
+    position: absolute;
+    top: -2rem;
+    right: 1rem;
+    font-family: "Courier New", monospace;
+    font-size: 18rem;
+    color: #303648;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    max-width: 340px;
+    margin: 0 0 1rem;
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+.hero p {
+    max-width: 500px;
+    margin: 0 0 2rem;
+    color: #b8c0d5;
+    line-height: 1.6;
+}
+
+/* Shared button styling */
+.button {
+    display: inline-block;
+    padding: 0.85rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-primary {
+    background-color: #d6a612;
+    color: #191d29;
+}
+
+.button-primary:hover {
+    background-color: #e7b929;
+}
+
+
+/* Featured products section */
+.featured-products {
+    background-color: #f3f4f8;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #d9dce5;
+}
+
+.featured-products h2 {
+    margin: 0 0 2rem;
+    font-size: 1.6rem;
+}
+
+/* Four equal-width columns */
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.25rem;
+}
+
+/* Individual product cards */
+.product-card {
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #d9dce5;
+    border-top: 3px solid #43877b;
+    border-radius: 3px;
+}
+
+.product-card-featured {
+    border-color: #747985;
+    border-top-color: #d6a612;
+}
+
+/* Image area */
+.product-image {
+    background-color: #f3f4f8;
+    padding: 3rem 1.5rem;
+}
+
+.product-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Product name, price, and link */
+.product-info {
+    padding: 1rem;
+}
+
+.product-info h3 {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+.product-info .price {
+    margin: 0 0 1rem;
+    color: #626b7e;
+    font-size: 0.9rem;
+}
+
+.product-info .button {
+    display: block;
+    width: 100%;
+    padding: 0.65rem 0.5rem;
+}
+
+/* First product's dark button */
+.button-dark {
+    background-color: #191d29;
+    color: white;
+}
+
+.button-dark:hover {
+    background-color: #34485b;
+}
+
+/* Other products' outlined buttons */
+.button-outline {
+    border-color: #191d29;
+    background-color: white;
+    color: #191d29;
+}
+
+.button-outline:hover {
+    background-color: #191d29;
+    color: white;
+}
+
+/* Adjust the grid for smaller screens */
+@media (max-width: 800px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
