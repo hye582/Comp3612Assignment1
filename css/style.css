@@ -1,10 +1,3 @@
-/*
-AI assistance: ChatGPT
-Prompt: "what's next"
-Context: Step-by-step help styling the Assignment 1 home page
-to match the supplied reference screenshot.
-*/
-
 /* General page styles */
 * {
     box-sizing: border-box;
@@ -99,15 +92,13 @@ a {
 }
 
 /* Decorative braces from the reference image */
-.hero::before {
-    content: "{ }";
+.hero-decoration {
     position: absolute;
     top: -2rem;
     right: 1rem;
     font-family: "Courier New", monospace;
     font-size: 18rem;
-    color: rgba(255, 255, 255, 0.04);
-    pointer-events: none;
+    color: #303648;
 }
 
 .hero-content {
@@ -148,4 +139,107 @@ a {
 
 .button-primary:hover {
     background-color: #e7b929;
+}
+
+
+/* Featured products section */
+.featured-products {
+    background-color: #f3f4f8;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #d9dce5;
+}
+
+.featured-products h2 {
+    margin: 0 0 2rem;
+    font-size: 1.6rem;
+}
+
+/* Four equal-width columns */
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.25rem;
+}
+
+/* Individual product cards */
+.product-card {
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #d9dce5;
+    border-top: 3px solid #43877b;
+    border-radius: 3px;
+}
+
+.product-card-featured {
+    border-color: #747985;
+    border-top-color: #d6a612;
+}
+
+/* Image area */
+.product-image {
+    background-color: #f3f4f8;
+    padding: 3rem 1.5rem;
+}
+
+.product-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Product name, price, and link */
+.product-info {
+    padding: 1rem;
+}
+
+.product-info h3 {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+.product-info .price {
+    margin: 0 0 1rem;
+    color: #626b7e;
+    font-size: 0.9rem;
+}
+
+.product-info .button {
+    display: block;
+    width: 100%;
+    padding: 0.65rem 0.5rem;
+}
+
+/* First product's dark button */
+.button-dark {
+    background-color: #191d29;
+    color: white;
+}
+
+.button-dark:hover {
+    background-color: #34485b;
+}
+
+/* Other products' outlined buttons */
+.button-outline {
+    border-color: #191d29;
+    background-color: white;
+    color: #191d29;
+}
+
+.button-outline:hover {
+    background-color: #191d29;
+    color: white;
+}
+
+/* Adjust the grid for smaller screens */
+@media (max-width: 800px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 }
