@@ -243,3 +243,79 @@ a {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Why Choose section */
+.why-choose {
+    background-color: white;
+    padding: 2.5rem 0;
+}
+
+.why-choose h2 {
+    margin: 0 0 1.25rem;
+    font-size: 1.6rem;
+}
+
+.why-choose p {
+    max-width: 650px;
+    margin: 0 0 1rem;
+    color: #626b7e;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Shared footer */
+.site-footer {
+    background-color: #191d29;
+    color: white;
+    padding: 2.5rem 0 1rem;
+}
+
+/* Three equal columns */
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.footer-columns h2 {
+    margin: 0 0 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.footer-columns ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-columns li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-columns a {
+    color: #b8c0d5;
+    font-size: 0.85rem;
+}
+
+.footer-columns a:hover {
+    color: #d6a612;
+}
+
+/* Copyright line */
+.copyright {
+    margin: 2rem 0 0;
+    border-top: 1px solid #343a4b;
+    padding-top: 1rem;
+    color: #b8c0d5;
+    font-size: 0.75rem;
+}
+
+/* Stack footer sections on narrow screens */
+@media (max-width: 600px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+}
