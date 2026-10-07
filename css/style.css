@@ -319,3 +319,208 @@ a {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* General About page styles */
+.about-page .container {
+    max-width: 1000px;
+}
+
+.about-page h2 {
+    margin: 0 0 1.25rem;
+    font-size: 1.6rem;
+}
+
+.about-page h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.about-page p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Shorter About banner */
+.about-hero {
+    padding: 3rem 2rem;
+}
+
+.about-hero h1 {
+    max-width: none;
+    font-size: 2rem;
+}
+
+.about-hero p {
+    margin-bottom: 0;
+}
+
+/* Section spacing */
+.our-story,
+.our-values,
+.our-team,
+.our-journey,
+.get-in-touch {
+    padding: 2.5rem 0;
+}
+
+/* Alternating background colors */
+.our-story,
+.our-team,
+.get-in-touch {
+    background-color: #f3f4f8;
+    border-top: 1px solid #d9dce5;
+    border-bottom: 1px solid #d9dce5;
+}
+
+/* Story: heading on the left, text on the right */
+.story-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.story-layout h2,
+.story-layout p {
+    margin: 0;
+}
+
+.story-layout p {
+    color: #626b7e;
+}
+
+/* Values */
+.our-values h2 {
+    text-align: center;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.value-card {
+    background-color: #f3f4f8;
+    border: 1px solid #d9dce5;
+    padding: 1.25rem;
+}
+
+.value-icon {
+    display: inline-block;
+    background-color: #191d29;
+    color: #d6a612;
+    padding: 0.5rem 0.75rem;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.value-card h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.value-card p {
+    margin: 0;
+    color: #626b7e;
+}
+
+/* Team */
+.team-introduction {
+    max-width: 600px;
+    margin: 0 0 2rem;
+    color: #626b7e;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.team-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #d9dce5;
+}
+
+.team-card h3 {
+    margin: 1rem 0 0.25rem;
+}
+
+.team-card p {
+    margin: 0 0 0.75rem;
+    color: #626b7e;
+}
+
+.team-card .team-role {
+    color: #8a6500;
+    font-size: 0.85rem;
+    font-family: "Courier New", monospace;
+}
+
+/* Journey */
+.our-journey h2 {
+    text-align: center;
+}
+
+.timeline {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    border-left: 2px solid #d9dce5;
+    list-style-type: disc;
+}
+
+.timeline li {
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    color: #d6a612;
+}
+
+.timeline h3 {
+    margin: 0 0 0.5rem;
+    color: #8a6500;
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
+}
+
+.timeline p {
+    margin: 0;
+    color: #626b7e;
+}
+
+/* Contact information */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 650px;
+}
+
+.contact-card {
+    background-color: white;
+    border: 1px solid #d9dce5;
+    padding: 1.25rem;
+}
+
+.contact-card h3 {
+    margin: 0 0 0.75rem;
+}
+
+.contact-card p {
+    margin: 0;
+    color: #626b7e;
+}
+
+/* Stack the sections on smaller screens */
+@media (max-width: 700px) {
+    .story-layout,
+    .values-grid,
+    .team-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
