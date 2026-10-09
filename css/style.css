@@ -801,3 +801,8 @@ and a two-column Grid layout.
         grid-template-columns: 1fr;
     }
 }
+
+/* Hide the decorative curly braces */
+.hero-decoration {
+    display: none;
+}
