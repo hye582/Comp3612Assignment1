@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cable Knit Sweater | COMP3612 Assign 1</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Shared header -->
+    <header class="site-header">
+        <div class="header-content">
+            <a class="site-logo" href="index.html">
+                <span class="logo-mark">//</span> COMP3612 Assign 1
+            </a>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cart (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page">
+
+    <!-- Breadcrumb navigation -->
+    <nav class="breadcrumb container" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> &gt;
+        <a href="#">Sweaters</a> &gt;
+        <span>Merino Wool Cable Knit Sweater</span>
+    </nav>
+
+    <div class="product-background">
+        <div class="container">
+
+            <!-- Images and purchase options -->
+            <section class="product-overview">
+
+                <div class="product-gallery">
+                    <img class="main-product-image"
+                         src="../data/images/003-medium-front.png"
+                         alt="Front view of a navy cable knit sweater">
+
+                    <div class="product-thumbnails">
+                        <img src="../data/images/003-thumb-front.png"
+                             alt="Sweater front view">
+
+                        <img src="../data/images/003-thumb-back.png"
+                             alt="Sweater back view">
+
+                        <img src="../data/images/003-thumb-front-angle.png"
+                             alt="Angled front view of the sweater">
+                    </div>
+                </div>
+
+                <div class="product-summary">
+                    <h1>Merino Wool Cable Knit Sweater</h1>
+
+                    <p class="product-rating">
+                        ★★★★☆ (4.3/5) · 3 reviews
+                    </p>
+
+                    <p class="product-price">$119.99</p>
+
+                    <p>
+                        This luxurious cable knit sweater is made from
+                        100% merino wool for exceptional warmth and
+                        softness. The classic cable pattern adds timeless
+                        texture and visual interest to this versatile
+                        piece. Natural temperature regulation properties
+                        make it perfect for transitional seasons.
+                    </p>
+
+                    <form
+                        action="https://www.randyconnolly.com/tests/process.php"
+                        method="post">
+
+                        <input type="hidden"
+                               name="product"
+                               value="Merino Wool Cable Knit Sweater">
+
+                        <!-- Select one size -->
+                        <fieldset class="size-options">
+                            <legend>Size:</legend>
+
+                            <label>
+                                <input type="radio"
+                                       name="size"
+                                       value="S"
+                                       required>
+                                <span>S</span>
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="size"
+                                       value="M">
+                                <span>M</span>
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="size"
+                                       value="L">
+                                <span>L</span>
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="size"
+                                       value="XL">
+                                <span>XL</span>
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="size"
+                                       value="XXL">
+                                <span>XXL</span>
+                            </label>
+                        </fieldset>
+
+                        <!-- Select one color -->
+                        <fieldset class="color-options">
+                            <legend>Color:</legend>
+
+                            <label>
+                                <input type="radio"
+                                       name="color"
+                                       value="Cream"
+                                       required>
+                                <span class="color-swatch cream"></span>
+                                Cream
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="color"
+                                       value="Charcoal">
+                                <span class="color-swatch charcoal"></span>
+                                Charcoal
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="color"
+                                       value="Navy">
+                                <span class="color-swatch navy"></span>
+                                Navy
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="color"
+                                       value="Burgundy">
+                                <span class="color-swatch burgundy"></span>
+                                Burgundy
+                            </label>
+                        </fieldset>
+
+                        <div class="quantity-control">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number"
+                                   id="quantity"
+                                   name="quantity"
+                                   value="1"
+                                   min="1"
+                                   step="1"
+                                   required>
+                        </div>
+
+                        <div class="product-actions">
+                            <button type="submit"
+                                    class="button button-primary">
+                                Add to Cart
+                            </button>
+
+                            <button type="button"
+                                    class="button button-outline">
+                                Add to Wishlist
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+
+            <!-- Links to information on this page -->
+            <nav class="product-section-links"
+                 aria-label="Product information">
+                <a href="#description">Description</a>
+                <a href="#specifications">Specifications</a>
+                <a href="#care">Care Instructions</a>
+            </nav>
+
+            <section id="description" class="product-description">
+                <h2>Product Details</h2>
+                <p>
+                    This luxurious cable knit sweater is made from
+                    100% merino wool for exceptional warmth and softness.
+                    The classic cable pattern adds timeless texture
+                    and visual interest to this versatile piece.
+                    Natural temperature regulation properties make
+                    it perfect for transitional seasons.
+                </p>
+            </section>
+
+            <section id="specifications" class="product-specifications">
+                <h2>Key Features</h2>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Material</th>
+                            <td>100% premium merino wool</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Style</th>
+                            <td>Classic cable knit pattern</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Closures</th>
+                            <td>Ribbed cuffs and hem</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Care</th>
+                            <td>Dry clean recommended</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="care" class="product-care">
+                <h2>Care Instructions</h2>
+                <p>Dry cleaning is recommended for this merino wool sweater.</p>
+            </section>
+
+            <!-- Customer reviews from data.json -->
+            <section class="customer-reviews">
+                <h2>Customer Reviews</h2>
+
+                <article class="review">
+                    <div class="review-heading">
+                        <h3>Maria C.</h3>
+                        <time datetime="2024-08-18">August 18, 2024</time>
+                    </div>
+
+                    <p class="review-stars" aria-label="5 out of 5 stars">
+                        ★★★★★
+                    </p>
+
+                    <p>
+                        Absolutely stunning sweater! The merino wool is
+                        incredibly soft and the cable knit detail is
+                        beautiful. Worth the investment.
+                    </p>
+                </article>
+
+                <article class="review">
+                    <div class="review-heading">
+                        <h3>Robert H.</h3>
+                        <time datetime="2024-08-12">August 12, 2024</time>
+                    </div>
+
+                    <p class="review-stars" aria-label="4 out of 5 stars">
+                        ★★★★☆
+                    </p>
+
+                    <p>
+                        Bought this for our lead software engineer and
+                        she loves it. High quality construction and the
+                        wool feels luxurious. Fits true to size.
+                    </p>
+                </article>
+
+                <article class="review">
+                    <div class="review-heading">
+                        <h3>Nina F.</h3>
+                        <time datetime="2024-07-25">July 25, 2024</time>
+                    </div>
+
+                    <p class="review-stars" aria-label="4 out of 5 stars">
+                        ★★★★☆
+                    </p>
+
+                    <p>
+                        Beautiful sweater but requires dry cleaning
+                        which is inconvenient. The quality is excellent
+                        though and it's very warm.
+                    </p>
+                </article>
+            </section>
+
+        </div>
+    </div>
+
+</main>
+
+    <!-- Shared footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <section>
+                    <h2>Customer Service</h2>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Connect</h2>
+                    <ul>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 COMP3612. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
